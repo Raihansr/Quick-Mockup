@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding=".5dp"
+    android:background="@drawable/bg_select"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/gray_color"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:elevation="@dimen/card_elevation">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_unselect"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/quiz_no"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:minWidth="32dp"
+                android:gravity="center"
+                android:paddingStart="@dimen/default_padding"
+                android:paddingEnd="@dimen/default_padding"
+                android:background="@drawable/top_left_curve"
+                android:textSize="@dimen/number_size"
+                android:textColor="@color/white_color"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/question_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/default_padding"
+                    android:layout_margin="@dimen/default_margin"
+                    android:textSize="@dimen/question_size"
+                    android:textColor="@color/white_color"
+                    android:textStyle="normal" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/default_margin">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/default_margin"
+                        app:cardBackgroundColor="@color/gray_color"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:elevation="@dimen/card_elevation">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/choice_1"
+                            android:tag="A"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/choice_A"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:padding="@dimen/default_padding"
+                                android:text="A."
+                                android:textSize="@dimen/question_size"
+                                android:textColor="@color/white_color"
+                                android:textStyle="bold"
+                                android:scrollbars="none"
+                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/choice_1_tv"
+                                android:layout_weight="7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="@dimen/default_padding"
+                                android:background="@android:color/transparent"
+                                android:textSize="@dimen/choices_size"
+                                android:textColor="@color/white_color"
+                                android:textAllCaps="false"
+                                android:textStyle="normal"/>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/default_margin"
+                        app:cardBackgroundColor="@color/gray_color"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:elevation="@dimen/card_elevation">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/choice_2"
+                            android:tag="B"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/choice_B"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:padding="@dimen/default_padding"
+                                android:text="B."
+                                android:textSize="@dimen/question_size"
+                                android:textColor="@color/white_color"
+                                android:textStyle="bold"
+                                android:scrollbars="none"
+                                tools:ignore="HardcodedText" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/choice_2_tv"
+                                android:layout_weight="7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="@dimen/default_padding"
+                                android:background="@android:color/transparent"
+                                android:textSize="@dimen/choices_size"
+                                android:textColor="@color/white_color"
+                                android:textStyle="normal"/>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/default_margin"
+                        app:cardBackgroundColor="@color/gray_color"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:elevation="@dimen/card_elevation">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/choice_3"
+                            android:tag="C"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/choice_C"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:padding="@dimen/default_padding"
+                                android:text="C."
+                                android:textSize="@dimen/question_size"
+                                android:textColor="@color/white_color"
+                                android:textStyle="bold"
+                                android:scrollbars="none"
+                                tools:ignore="HardcodedText" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/choice_3_tv"
+                                android:layout_weight="7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="@dimen/default_padding"
+                                android:background="@android:color/transparent"
+                                android:textSize="@dimen/choices_size"
+                                android:textColor="@color/white_color"
+                                android:textStyle="normal"/>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/default_margin"
+                        app:cardBackgroundColor="@color/gray_color"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:elevation="@dimen/card_elevation">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/choice_4"
+                            android:tag="D"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/choice_D"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:padding="@dimen/default_padding"
+                                android:text="D."
+                                android:textSize="@dimen/question_size"
+                                android:textColor="@color/white_color"
+                                android:textStyle="bold"
+                                android:scrollbars="none"
+                                tools:ignore="HardcodedText" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/choice_4_tv"
+                                android:layout_weight="7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="@dimen/default_padding"
+                                android:background="@android:color/transparent"
+                                android:textSize="@dimen/choices_size"
+                                android:textColor="@color/white_color"
+                                android:textStyle="normal"/>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/explanation_panel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:layout_marginEnd="@dimen/default_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"
+                        app:cardBackgroundColor="@color/gray_color"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:elevation="@dimen/card_elevation">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/explanation_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/default_padding"
+                            android:textSize="@dimen/number_size"
+                            android:textColor="@color/white_color"
+                            android:text="Sorry! no explanation given yet"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/explanation_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:layout_gravity="end|bottom"
+                android:paddingStart="@dimen/default_padding"
+                android:paddingEnd="@dimen/default_padding"
+                android:background="@drawable/bottom_right_curve"
+                android:text="Explanation"
+                android:textSize="@dimen/number_size"
+                android:textColor="@color/white_color"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

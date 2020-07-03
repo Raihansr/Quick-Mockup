@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/category_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/gray_color"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:elevation="@dimen/card_elevation"
+        tools:ignore="TooDeepLayout">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mock_no_tv"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/left_round"
+                android:text="Mock\n1"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/default_size"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:padding="@dimen/default_padding"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_padding"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/category_tv"
+                        android:layout_weight="2.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:text="Android"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/default_size"
+                        android:textStyle="normal"
+                        tools:ignore="HardcodedText" />
+
+                    <RelativeLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="0dp"
+                            android:minWidth="0dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:drawableStart="@drawable/ic_time"
+                            android:drawablePadding="@dimen/default_padding"
+                            android:background="@android:color/transparent"
+                            android:gravity="end|center_vertical"
+                            android:text="30:00"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/number_size"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/default_padding"
+                    android:paddingEnd="@dimen/default_padding"
+                    android:paddingBottom="@dimen/default_margin">
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/questions_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:text="Question Answered"
+                            android:textColor="@color/hint_color"
+                            android:textSize="@dimen/small_size"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/questions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:text="10/30"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/number_size"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="2.5dp"
+                        android:layout_height="0dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/marks_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:text="Marks Obtained"
+                            android:textColor="@color/hint_color"
+                            android:textSize="@dimen/small_size"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/marks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:text="10/30"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/number_size"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

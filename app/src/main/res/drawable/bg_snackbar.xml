@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <stroke
+        android:color="#e3e4e6"
+        android:width="0.1dp"/>
+
+    <corners
+        android:topLeftRadius="@dimen/card_corner_radius"
+        android:topRightRadius="@dimen/card_corner_radius"
+        android:bottomLeftRadius="2.5dp"
+        android:bottomRightRadius="2.5dp"/>
+
+    <gradient
+        android:endColor="@color/colorPrimary"
+        android:centerColor="@color/colorAccent"
+        android:startColor="@color/colorPrimary"
+        android:type="linear"
+        android:angle="45"/>
+
+</shape>

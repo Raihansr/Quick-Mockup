@@ -1,0 +1,8 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="action_bar_bg" type="drawable">@drawable/bg_gradient</item>
+    <item name="gray_color" type="color">@color/colorGray</item>
+    <item name="white_color" type="color">@android:color/white</item>
+    <item name="hint_color" type="color">@color/colorAsh</item>
+    <item name="right_ans_color" type="color">@android:color/holo_green_dark</item>
+    <item name="wrong_ans_color" type="color">@android:color/holo_red_dark</item>
+</resources>
